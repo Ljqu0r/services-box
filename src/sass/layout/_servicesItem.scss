@@ -1,0 +1,69 @@
+.servicesItem {
+  width: 100%;
+  min-width: 230px;
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 10px 0;
+  background-color: map-get($colors,bg-light);
+  border-radius: 5px;
+
+  @include respond-to('s') {
+    width: 50%;
+    margin: 0;
+    background-color: unset;
+  }
+  @include respond-to('m') {
+    width: 41%;
+  }
+  @include respond-to('l') {
+    width: 31%;
+  }
+  @include respond-to('xl') {
+    width: 26%;
+  }
+}
+
+.logoContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100px;
+
+  .logoContainer__logo {
+    margin: 15px 30px 35px 30px;
+    min-width: 50px;
+    width: 50px;
+    height: 50px;
+    @include bg-img;
+    @include respond-to('s') {
+      margin: 15px 40px 35px 0;
+    }
+    &:before {
+      position: absolute;
+      transform: translate(15%, 35%);
+      content: "";
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #FEE7C8;
+      z-index: -1;
+    }
+  }
+
+  .logoContainer__headline {
+    color: map_get($colors, txt-dark);
+    font-size: 24px;
+    margin: 0;
+  }
+}
+
+.servicesItem__desc {
+  color: map_get($colors, txt-gray);
+  text-align: center;
+  @include respond-to('s'){
+    text-align: unset;
+  }
+}
+

@@ -1,0 +1,37 @@
+.wideBtnContainer {
+  min-width: 197px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  @include respond-to('m'){
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: auto;
+  }
+  .wideBtn {
+
+    .wideBtn__link {
+      display: block;
+      line-height: unset;
+      padding: 10px 25px;
+      font-weight: 800;
+      background-color: map-get($colors, bg-orange);
+      color: #FFFFFF;
+      text-decoration: none;
+      border: 1px solid map-get($colors, bg-orange);
+      transition: 0.3s linear;
+      &:hover {
+        background-color: #FFFFFF;
+        color: map-get($colors, bg-orange);
+      }
+      &:after {
+        content: "\2192";
+        font-size: 24px;
+      }
+    }
+  }
+
+}
+
+

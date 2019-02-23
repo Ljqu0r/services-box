@@ -1,0 +1,47 @@
+.startBtn {
+  margin: 10px 0;
+  text-align: center;
+  @include respond-to('s') {
+    margin: 0;
+    text-align: unset;
+  }
+
+  .startBtn__link {
+    border: 1px solid map_get($colors, txt-gray);
+    padding: 10px 44px;
+    color: map_get($colors, txt-gray);
+    transition: .3s linear;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+    &:hover {
+      background-color: map-get($colors, txt-gray);
+      color: #FFFFFF;
+
+      @include respond-to('s') {
+        background-color: unset;
+        color: map_get($colors, bg-orange);
+        &:after{
+          color: map_get($colors, bg-orange);
+          transform: translateX(5px);
+
+        }
+      }
+    }
+    @include respond-to('s') {
+      margin: 0;
+      padding: 0;
+      border: none;
+    }
+    &:after {
+      content: "\2192";
+      font-size: 24px;
+      font-weight: 800;
+      display: inline-block;
+      transition: transform .2s linear;
+    }
+  }
+}
+
+
+

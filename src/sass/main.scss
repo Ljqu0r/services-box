@@ -1,0 +1,37 @@
+@import "libs";
+@import "base";
+@import "fonts";
+@import "vars";
+@import "mixin";
+@import "grid";
+/*
+Пользовательские стили
+*/
+@import "layout/title";
+@import "layout/services";
+@import "layout/servicesItem";
+@import "layout/wideBtn";
+@import "layout/startBtn";
+.lightPicture {
+  background-image: url(../../img/lightbulb.svg);
+}
+
+.chessPictire {
+  background-image: url(../../img/chess-piece.svg);
+}
+
+.sharePicture {
+  background-image: url(../../img/share.svg);
+}
+
+.rocketPicture {
+  background-image: url(../../img/rocket.svg);
+}
+
+.placeholderPicture {
+  background-image: url(../../img/placeholder.svg);
+}
+
+.controlsPicture {
+  background-image: url(../../img/controls.svg);
+}

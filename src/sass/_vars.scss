@@ -1,0 +1,23 @@
+$colors: (
+        txt-orange: #F89F21,
+        txt-dark: #252525,
+        txt-gray: #6E6E6E,
+        pic-orange: #EF4F1F,
+        bg-orange: #EE4212,
+        bg-light:#f10f1a10,
+        bg-pic:#FEE7C8,
+        bg-line: linear-gradient(to right, #F89F21 0%, #F89F21 70%, #FFF 70%, #FFF 85%, #F89F21 85%, #F89F21 100%)
+);
+
+$min-breakpoints: (
+        's': 576px,
+        'm': 768px,
+        'l': 992px,
+        'xl': 1200px
+) !default;
+
+
+/* body {
+background-color: map-get($colors, theme-blue);
+}
+*/

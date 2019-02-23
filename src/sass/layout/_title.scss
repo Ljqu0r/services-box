@@ -1,0 +1,47 @@
+.title {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+
+  .titleWrap {
+    display: flex;
+    flex-direction: column;
+    max-width: 504px;
+    text-align: center;
+    @include respond-to('m') {
+      text-align: left;
+    }
+
+    .title__description {
+      text-transform: uppercase;
+      font-size: 16px;
+      color: map-get($colors, txt-orange);
+    }
+
+    .title__slogan {
+      font-weight: bold;
+      font-size: 50px;
+      margin: 0;
+      color: map-get($colors, txt-dark);
+
+      &:after {
+        display: block;
+        margin: 40px 0;
+        content: "";
+        width: 100%;
+        height: 1px;
+        background: map-get($colors, txt-orange);
+        opacity: .5;
+        @include respond-to('m') {
+          width: 50px;
+          margin: 20px 0 0 0;
+          background: map-get($colors, bg-line);
+          height: 1.5px;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+}
