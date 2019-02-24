@@ -430,8 +430,7 @@ background-color: map-get($colors, theme-blue);
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: center;
-  min-height: 100px; }
+  align-items: center; }
   .logoContainer .logoContainer__logo {
     position: relative;
     margin: 15px 30px 35px 30px;
