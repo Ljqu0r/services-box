@@ -32,6 +32,7 @@
   min-height: 100px;
 
   .logoContainer__logo {
+    position: relative;
     margin: 15px 30px 35px 30px;
     min-width: 50px;
     width: 50px;
@@ -42,7 +43,8 @@
     }
     &:before {
       position: absolute;
-      transform: translate(15%, 35%);
+      top: 35%;
+      left: 15%;
       content: "";
       width: 50px;
       height: 50px;
